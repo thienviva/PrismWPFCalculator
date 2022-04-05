@@ -1,0 +1,169 @@
+﻿<UserControl x:Class="PrismCalculator.Modules.Calculator.Views.PrismCalculatorControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:prism="http://prismlibrary.com/"             
+             prism:ViewModelLocator.AutoWireViewModel="True">
+    <Grid>
+        <Grid.Resources>
+            <Style TargetType="Button" BasedOn="{StaticResource {x:Type Button}}" x:Key="CommonStyle">
+                <Setter Property="CommandParameter" Value="{Binding Path=Content, RelativeSource={RelativeSource Self}}"/>
+                <Setter Property="Margin" Value="5"/>
+                <Setter Property="FontWeight" Value="Bold"/>
+                <Setter Property="Width" Value="30"/>
+                <Setter Property="Height" Value="30"/>
+                <Setter Property="Foreground" Value="White"/>
+            </Style>
+            <Style TargetType="Button" BasedOn="{StaticResource CommonStyle}">
+                <Setter Property="Command" Value="{Binding ClickCommand}"/>
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="Button">
+                            <Border x:Name="border" CornerRadius="15" Background="ForestGreen" BorderBrush="SkyBlue" BorderThickness="2" Padding="2">
+                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+                            </Border>
+
+                            <ControlTemplate.Triggers>
+                                <Trigger Property="IsMouseOver" Value="true">
+                                    <Setter Property="FontSize" Value="18"/>
+                                    <Setter Property="Background" TargetName="border" Value="blue"/>
+                                    <Setter Property="Effect">
+                                        <Setter.Value>
+                                            <DropShadowEffect ShadowDepth="0" Color="Blue" Opacity="1" BlurRadius="20"/>
+                                        </Setter.Value>
+                                    </Setter>
+                                </Trigger>
+                            </ControlTemplate.Triggers>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+            <Style TargetType="Button" x:Key="Trigostyle" BasedOn="{StaticResource CommonStyle}">
+                <Setter Property="Command" Value="{Binding TrigoCommand}"/>
+                <Setter Property="Width" Value="80"/>
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="Button">
+                            <Border x:Name="border" CornerRadius="15" Background="ForestGreen" BorderBrush="SkyBlue" BorderThickness="2" Padding="2">
+                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </Border>
+                            <ControlTemplate.Triggers>
+                                <Trigger Property="IsMouseOver" Value="true">
+                                    <Setter Property="Background" TargetName="border" Value="blue"/>
+                                    <Setter Property="Effect">
+                                        <Setter.Value>
+                                            <DropShadowEffect ShadowDepth="0" Color="Blue" Opacity="1" BlurRadius="20"/>
+                                        </Setter.Value>
+                                    </Setter>
+                                </Trigger>
+                                </ControlTemplate.Triggers>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+        </Grid.Resources>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="{Binding Result}" FontWeight="Bold" HorizontalAlignment="Left" Margin="5"/>
+        <TextBox Text="{Binding Expression}" FontWeight="Bold" HorizontalAlignment="Left" Grid.Row="1" Margin="5" Width="520">
+            <TextBox.Style>
+                <Style TargetType="TextBox" BasedOn="{StaticResource {x:Type TextBox}}">
+                    <Setter Property="Effect">
+                        <Setter.Value>
+                            <DropShadowEffect ShadowDepth="0" Color="Blue" Opacity="1" BlurRadius="20"/>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
+        <Grid Grid.Row="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0" Margin="5,0,0,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="auto"/>
+                </Grid.ColumnDefinitions>
+
+                <Button Content="1" Grid.Column="0" Grid.Row="0"/>
+                <Button Content="2" Grid.Column="1" Grid.Row="0"/>
+                <Button Content="3" Grid.Column="2" Grid.Row="0"/>
+                <Button Content="4" Grid.Column="3" Grid.Row="0"/>
+                <Button Content="5" Grid.Column="0" Grid.Row="1"/>
+                <Button Content="6" Grid.Column="1" Grid.Row="1"/>
+                <Button Content="7" Grid.Column="2" Grid.Row="1"/>
+                <Button Content="8" Grid.Column="3" Grid.Row="1"/>
+                <Button Content="9" Grid.Column="0" Grid.Row="2"/>
+                <Button Content="e" Grid.Column="1" Grid.Row="2"/>
+                <Button Content="." Grid.Column="2" Grid.Row="2"/>
+                <Button Content="+" Grid.Column="3" Grid.Row="2"/>
+                <Button Content="-" Grid.Column="0" Grid.Row="3"/>
+                <Button Content="*" Grid.Column="1" Grid.Row="3"/>
+                <Button Content="/" Grid.Column="2" Grid.Row="3"/>
+                <Button Content="=" Grid.Column="3" Grid.Row="3" Background="Green" Command="{Binding CalculateCommand}"/>
+            </Grid>
+
+            <Grid Grid.Column="1" Margin="5,0,0,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="auto"/>
+                </Grid.ColumnDefinitions>
+                <Button Content="Sin" Grid.Column="0" Grid.Row="0" Style="{StaticResource Trigostyle}"/>
+                <Button Content="Sinh" Grid.Column="1" Grid.Row="0" Style="{StaticResource Trigostyle}" />
+                <Button Content="Sin&#x207B;&#x00B9;" Grid.Column="2" Grid.Row="0" Style="{StaticResource Trigostyle}" CommandParameter="Asin"/>
+                <Button Content="Sinh&#x207B;&#x00B9;" Grid.Column="3" Grid.Row="0" Style="{StaticResource Trigostyle}" CommandParameter="Asinh"/>
+                
+                <Button Content="Cos" Grid.Column="0" Grid.Row="1" Style="{StaticResource Trigostyle}"/>
+                <Button Content="Cosh" Grid.Column="1" Grid.Row="1" Style="{StaticResource Trigostyle}"/>
+                <Button Content="Cos&#x207B;&#x00B9;" Grid.Column="2" Grid.Row="1" Style="{StaticResource Trigostyle}" CommandParameter="Acos"/>
+                <Button Content="Cosh&#x207B;&#x00B9;" Grid.Column="3" Grid.Row="1" Style="{StaticResource Trigostyle}" CommandParameter="Acosh"/>
+                
+                <Button Content="Tan" Grid.Column="0" Grid.Row="2" Style="{StaticResource Trigostyle}"/>
+                <Button Content="Tanh" Grid.Column="1" Grid.Row="2" Style="{StaticResource Trigostyle}"/>
+                <Button Content="Tan&#x207B;&#x00B9;" Grid.Column="2" Grid.Row="2" Style="{StaticResource Trigostyle}" CommandParameter="Atan"/>
+                <Button Content="Tanh&#x207B;&#x00B9;" Grid.Column="3" Grid.Row="2" Style="{StaticResource Trigostyle}" CommandParameter="Atanh"/>
+
+                <Button Content="Sec" Grid.Column="0" Grid.Row="3" Style="{StaticResource Trigostyle}"/>
+                <Button Content="Sech" Grid.Column="1" Grid.Row="3" Style="{StaticResource Trigostyle}"/>
+                <Button Content="Sec&#x207B;&#x00B9;" Grid.Column="2" Grid.Row="3" Style="{StaticResource Trigostyle}" CommandParameter="Asec"/>
+                <Button Content="Sech#x207B;&#x00B9;" Grid.Column="3" Grid.Row="3" Style="{StaticResource Trigostyle}" CommandParameter="Asech"/>
+                
+                <Button Content="Cosec" Grid.Column="0" Grid.Row="3" Style="{StaticResource Trigostyle}"/>
+                <Button Content="Cosech" Grid.Column="1" Grid.Row="3" Style="{StaticResource Trigostyle}"/>
+                <Button Content="Cosec&#x207B;&#x00B9;" Grid.Column="2" Grid.Row="3" Style="{StaticResource Trigostyle}" CommandParameter="Acosec"/>
+                <Button Content="Cosech&#x207B;&#x00B9;" Grid.Column="3" Grid.Row="3" Style="{StaticResource Trigostyle}" CommandParameter="Acosech"/>
+                
+                <Button Content="Cot" Grid.Column="0" Grid.Row="4" Style="{StaticResource Trigostyle}"/>
+                <Button Content="Coth" Grid.Column="1" Grid.Row="4" Style="{StaticResource Trigostyle}"/>
+                <Button Content="Cot&#x207B;&#x00B9;" Grid.Column="2" Grid.Row="4" Style="{StaticResource Trigostyle}" CommandParameter="Acot"/>
+                <Button Content="Coth&#x207B;&#x00B9;" Grid.Column="3" Grid.Row="4" Style="{StaticResource Trigostyle}" CommandParameter="Acoth"/>
+            </Grid>
+        </Grid>
+    </Grid>
+</UserControl>
