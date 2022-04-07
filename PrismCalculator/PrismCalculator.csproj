@@ -104,15 +104,16 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Prism.Core">
-      <Version>8.1.97</Version>
-    </PackageReference>
-    <PackageReference Include="Prism.Unity" Version="8.1.97" />
+    <PackageReference Include="Prism.Unity" Version="8.0.0.1909" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\PrismCalculator.Modules.Calculator\PrismCalculator.Modules.Calculator.csproj">
       <Project>{2008E074-9084-43CE-BA30-3E00F0A80DDA}</Project>
       <Name>PrismCalculator.Modules.Calculator</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PrismCalculator.Modules.Login\PrismCalculator.Modules.Login.csproj">
+      <Project>{E0BAFABD-81CC-49AF-B2B5-1A04569B0131}</Project>
+      <Name>PrismCalculator.Modules.Login</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

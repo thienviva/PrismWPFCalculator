@@ -44,6 +44,19 @@
         "runtime": {
           "lib/net47/Prism.Wpf.dll": {}
         }
+      },
+      "PrismCalculator.Modules.Login/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.8",
+        "dependencies": {
+          "Prism.Wpf": "8.0.0.1909"
+        },
+        "compile": {
+          "bin/placeholder/PrismCalculator.Modules.Login.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PrismCalculator.Modules.Login.dll": {}
+        }
       }
     },
     ".NETFramework,Version=v4.8/win": {
@@ -88,6 +101,19 @@
         },
         "runtime": {
           "lib/net47/Prism.Wpf.dll": {}
+        }
+      },
+      "PrismCalculator.Modules.Login/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.8",
+        "dependencies": {
+          "Prism.Wpf": "8.0.0.1909"
+        },
+        "compile": {
+          "bin/placeholder/PrismCalculator.Modules.Login.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PrismCalculator.Modules.Login.dll": {}
         }
       }
     },
@@ -134,6 +160,19 @@
         "runtime": {
           "lib/net47/Prism.Wpf.dll": {}
         }
+      },
+      "PrismCalculator.Modules.Login/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.8",
+        "dependencies": {
+          "Prism.Wpf": "8.0.0.1909"
+        },
+        "compile": {
+          "bin/placeholder/PrismCalculator.Modules.Login.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PrismCalculator.Modules.Login.dll": {}
+        }
       }
     },
     ".NETFramework,Version=v4.8/win-x86": {
@@ -178,6 +217,19 @@
         },
         "runtime": {
           "lib/net47/Prism.Wpf.dll": {}
+        }
+      },
+      "PrismCalculator.Modules.Login/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.8",
+        "dependencies": {
+          "Prism.Wpf": "8.0.0.1909"
+        },
+        "compile": {
+          "bin/placeholder/PrismCalculator.Modules.Login.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PrismCalculator.Modules.Login.dll": {}
         }
       }
     }
@@ -259,12 +311,17 @@
         "prism.wpf.nuspec",
         "readme.txt"
       ]
+    },
+    "PrismCalculator.Modules.Login/1.0.0": {
+      "type": "project",
+      "path": "../PrismCalculator.Modules.Login/PrismCalculator.Modules.Login.csproj",
+      "msbuildProject": "../PrismCalculator.Modules.Login/PrismCalculator.Modules.Login.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETFramework,Version=v4.8": [
-      "Prism.Core >= 8.1.97",
-      "Prism.Wpf >= 8.1.97"
+      "Prism.Wpf >= 8.1.97",
+      "PrismCalculator.Modules.Login >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -273,11 +330,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Git\\PrismCalculator\\PrismCalculator.Modules.Calculator\\PrismCalculator.Modules.Calculator.csproj",
+      "projectUniqueName": "E:\\Git\\PrismWPFCalculator\\PrismCalculator.Modules.Calculator\\PrismCalculator.Modules.Calculator.csproj",
       "projectName": "PrismCalculator.Modules.Calculator",
-      "projectPath": "E:\\Git\\PrismCalculator\\PrismCalculator.Modules.Calculator\\PrismCalculator.Modules.Calculator.csproj",
+      "projectPath": "E:\\Git\\PrismWPFCalculator\\PrismCalculator.Modules.Calculator\\PrismCalculator.Modules.Calculator.csproj",
       "packagesPath": "C:\\Users\\thien\\.nuget\\packages\\",
-      "outputPath": "E:\\Git\\PrismCalculator\\PrismCalculator.Modules.Calculator\\obj\\",
+      "outputPath": "E:\\Git\\PrismWPFCalculator\\PrismCalculator.Modules.Calculator\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -293,17 +350,17 @@
       },
       "frameworks": {
         "net48": {
-          "projectReferences": {}
+          "projectReferences": {
+            "E:\\Git\\PrismWPFCalculator\\PrismCalculator.Modules.Login\\PrismCalculator.Modules.Login.csproj": {
+              "projectPath": "E:\\Git\\PrismWPFCalculator\\PrismCalculator.Modules.Login\\PrismCalculator.Modules.Login.csproj"
+            }
+          }
         }
       }
     },
     "frameworks": {
       "net48": {
         "dependencies": {
-          "Prism.Core": {
-            "target": "Package",
-            "version": "[8.1.97, )"
-          },
           "Prism.Wpf": {
             "target": "Package",
             "version": "[8.1.97, )"

@@ -3,6 +3,7 @@ using Prism.Ioc;
 using Prism.Modularity;
 using System.Windows;
 using PrismCalculator.Modules.Calculator;
+using PrismCalculator.Modules.Login.Views;
 
 namespace PrismCalculator
 {
@@ -25,5 +26,16 @@ namespace PrismCalculator
             //moduleCatalog.AddModule<MainModule>();
             moduleCatalog.AddModule<CalculatorModule>();
         }
+
+        //protected override void OnInitialized()
+        //{
+        //    var login = Container.Resolve<PrismLoginWindow>();
+        //    var result = login.ShowDialog();
+        //    if (result.Value)
+        //        base.OnInitialized();
+        //    else
+        //        Application.Current.Shutdown();
+        //    base.OnInitialized();
+        //}
     }
 }

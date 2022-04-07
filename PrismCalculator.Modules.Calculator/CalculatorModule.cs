@@ -2,6 +2,7 @@
 using Prism.Ioc;
 using Prism.Modularity;
 using Prism.Regions;
+using PrismCalculator.Modules.Login.Views;
 
 namespace PrismCalculator.Modules.Calculator
 {
@@ -16,7 +17,7 @@ namespace PrismCalculator.Modules.Calculator
 
         public void RegisterTypes(IContainerRegistry containerRegistry)
         {
-            
+            containerRegistry.RegisterDialog<PrismLoginWindow>();
         }
     }
 }

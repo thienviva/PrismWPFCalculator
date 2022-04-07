@@ -11,5 +11,10 @@ namespace PrismCalculator.Modules.Calculator.Views
         {
             InitializeComponent();
         }
+
+        private void Button_Click()
+        {
+
+        }
     }
 }

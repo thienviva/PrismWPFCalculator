@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:prism="http://prismlibrary.com/"             
              prism:ViewModelLocator.AutoWireViewModel="True">
+
     <Grid>
         <Grid.Resources>
             <Style TargetType="Button" BasedOn="{StaticResource {x:Type Button}}" x:Key="CommonStyle">
@@ -95,6 +96,9 @@
                     <RowDefinition Height="auto"/>
                     <RowDefinition Height="auto"/>
                     <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="auto"/>
@@ -107,22 +111,41 @@
                 <Button Content="2" Grid.Column="1" Grid.Row="0"/>
                 <Button Content="3" Grid.Column="2" Grid.Row="0"/>
                 <Button Content="4" Grid.Column="3" Grid.Row="0"/>
+                
                 <Button Content="5" Grid.Column="0" Grid.Row="1"/>
                 <Button Content="6" Grid.Column="1" Grid.Row="1"/>
                 <Button Content="7" Grid.Column="2" Grid.Row="1"/>
                 <Button Content="8" Grid.Column="3" Grid.Row="1"/>
+
                 <Button Content="9" Grid.Column="0" Grid.Row="2"/>
-                <Button Content="e" Grid.Column="1" Grid.Row="2"/>
-                <Button Content="." Grid.Column="2" Grid.Row="2"/>
-                <Button Content="+" Grid.Column="3" Grid.Row="2"/>
-                <Button Content="-" Grid.Column="0" Grid.Row="3"/>
-                <Button Content="*" Grid.Column="1" Grid.Row="3"/>
-                <Button Content="/" Grid.Column="2" Grid.Row="3"/>
-                <Button Content="=" Grid.Column="3" Grid.Row="3" Background="Green" Command="{Binding CalculateCommand}"/>
+                <Button Content="." Grid.Column="1" Grid.Row="2"/>
+                <Button Content="+" Grid.Column="2" Grid.Row="2"/>
+                <Button Content="-" Grid.Column="3" Grid.Row="2"/>
+                
+                <Button Content="*" Grid.Column="0" Grid.Row="3"/>
+                <Button Content="/" Grid.Column="1" Grid.Row="3"/>
+                <Button Content="0" Grid.Column="2" Grid.Row="3"/>
+                <Button Content="&#x03a0;" Grid.Column="3" Grid.Row="3" Command="{Binding PICommand}"/>
+
+                <Button Content="1/x" Grid.Column="0" Grid.Row="4" Command="{Binding InverseCommand}"/>
+                <Button Content="x&#x207F;" Grid.Column="1" Grid.Row="4" Command="{Binding PowerCommand}"/>
+                <Button Content="e" Grid.Column="2" Grid.Row="4" Command="{Binding ECommand}"/>
+                <Button Content="e&#x207F;" Grid.Column="3" Grid.Row="4" Command="{Binding EPowerCommand}"/>
+
+                <Button Content="&#x221B;x" Grid.Column="0" Grid.Row="5" Command="{Binding CubeRootCommand}"/>
+                <Button Content="&#8730;x" Grid.Column="1" Grid.Row="5" Command="{Binding SquareRootCommand}"/>
+                <Button Content="n!" Grid.Column="2" Grid.Row="5" Command="{Binding FactCommand}"/>
+                <Button Content="=" Grid.Column="3" Grid.Row="5" Background="Green" Command="{Binding CalculateCommand}"/>
+
+                <Button Width="100" Background="Transparent" Grid.ColumnSpan="4" Grid.Row="6" Content="LOGIN" Command="{Binding LoginCommand}"/>
+
             </Grid>
 
             <Grid Grid.Column="1" Margin="5,0,0,0">
                 <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
                     <RowDefinition Height="auto"/>
                     <RowDefinition Height="auto"/>
                     <RowDefinition Height="auto"/>
@@ -137,32 +160,37 @@
                 <Button Content="Sin" Grid.Column="0" Grid.Row="0" Style="{StaticResource Trigostyle}"/>
                 <Button Content="Sinh" Grid.Column="1" Grid.Row="0" Style="{StaticResource Trigostyle}" />
                 <Button Content="Sin&#x207B;&#x00B9;" Grid.Column="2" Grid.Row="0" Style="{StaticResource Trigostyle}" CommandParameter="Asin"/>
-                <Button Content="Sinh&#x207B;&#x00B9;" Grid.Column="3" Grid.Row="0" Style="{StaticResource Trigostyle}" CommandParameter="Asinh"/>
+                <Button Content="Sinh&#x207B;&#x00B9;" Grid.Column="3" Grid.Row="0" Style="{StaticResource Trigostyle}" Command="{Binding SinhInverseCommand}"/>
                 
                 <Button Content="Cos" Grid.Column="0" Grid.Row="1" Style="{StaticResource Trigostyle}"/>
                 <Button Content="Cosh" Grid.Column="1" Grid.Row="1" Style="{StaticResource Trigostyle}"/>
                 <Button Content="Cos&#x207B;&#x00B9;" Grid.Column="2" Grid.Row="1" Style="{StaticResource Trigostyle}" CommandParameter="Acos"/>
-                <Button Content="Cosh&#x207B;&#x00B9;" Grid.Column="3" Grid.Row="1" Style="{StaticResource Trigostyle}" CommandParameter="Acosh"/>
+                <Button Content="Cosh&#x207B;&#x00B9;" Grid.Column="3" Grid.Row="1" Style="{StaticResource Trigostyle}" Command="{Binding CoshInverseCommand}"/>
                 
                 <Button Content="Tan" Grid.Column="0" Grid.Row="2" Style="{StaticResource Trigostyle}"/>
                 <Button Content="Tanh" Grid.Column="1" Grid.Row="2" Style="{StaticResource Trigostyle}"/>
                 <Button Content="Tan&#x207B;&#x00B9;" Grid.Column="2" Grid.Row="2" Style="{StaticResource Trigostyle}" CommandParameter="Atan"/>
-                <Button Content="Tanh&#x207B;&#x00B9;" Grid.Column="3" Grid.Row="2" Style="{StaticResource Trigostyle}" CommandParameter="Atanh"/>
+                <Button Content="Tanh&#x207B;&#x00B9;" Grid.Column="3" Grid.Row="2" Style="{StaticResource Trigostyle}" Command="{Binding TanhInverseCommand}"/>
 
                 <Button Content="Sec" Grid.Column="0" Grid.Row="3" Style="{StaticResource Trigostyle}"/>
                 <Button Content="Sech" Grid.Column="1" Grid.Row="3" Style="{StaticResource Trigostyle}"/>
                 <Button Content="Sec&#x207B;&#x00B9;" Grid.Column="2" Grid.Row="3" Style="{StaticResource Trigostyle}" CommandParameter="Asec"/>
-                <Button Content="Sech#x207B;&#x00B9;" Grid.Column="3" Grid.Row="3" Style="{StaticResource Trigostyle}" CommandParameter="Asech"/>
+                <Button Content="Sech&#x207B;&#x00B9;" Grid.Column="3" Grid.Row="3" Style="{StaticResource Trigostyle}" Command="{Binding SechInverseCommand}"/>
                 
-                <Button Content="Cosec" Grid.Column="0" Grid.Row="3" Style="{StaticResource Trigostyle}"/>
-                <Button Content="Cosech" Grid.Column="1" Grid.Row="3" Style="{StaticResource Trigostyle}"/>
-                <Button Content="Cosec&#x207B;&#x00B9;" Grid.Column="2" Grid.Row="3" Style="{StaticResource Trigostyle}" CommandParameter="Acosec"/>
-                <Button Content="Cosech&#x207B;&#x00B9;" Grid.Column="3" Grid.Row="3" Style="{StaticResource Trigostyle}" CommandParameter="Acosech"/>
+                <Button Content="Cosec" Grid.Column="0" Grid.Row="4" Style="{StaticResource Trigostyle}"/>
+                <Button Content="Cosech" Grid.Column="1" Grid.Row="4" Style="{StaticResource Trigostyle}"/>
+                <Button Content="Cosec&#x207B;&#x00B9;" Grid.Column="2" Grid.Row="4" Style="{StaticResource Trigostyle}" CommandParameter="Acosec"/>
+                <Button Content="Cosech&#x207B;&#x00B9;" Grid.Column="3" Grid.Row="4" Style="{StaticResource Trigostyle}" Command="{Binding CosechInverseCommand}"/>
                 
-                <Button Content="Cot" Grid.Column="0" Grid.Row="4" Style="{StaticResource Trigostyle}"/>
-                <Button Content="Coth" Grid.Column="1" Grid.Row="4" Style="{StaticResource Trigostyle}"/>
-                <Button Content="Cot&#x207B;&#x00B9;" Grid.Column="2" Grid.Row="4" Style="{StaticResource Trigostyle}" CommandParameter="Acot"/>
-                <Button Content="Coth&#x207B;&#x00B9;" Grid.Column="3" Grid.Row="4" Style="{StaticResource Trigostyle}" CommandParameter="Acoth"/>
+                <Button Content="Cot" Grid.Column="0" Grid.Row="5" Style="{StaticResource Trigostyle}"/>
+                <Button Content="Coth" Grid.Column="1" Grid.Row="5" Style="{StaticResource Trigostyle}"/>
+                <Button Content="Cot&#x207B;&#x00B9;" Grid.Column="2" Grid.Row="5" Style="{StaticResource Trigostyle}"/>
+                <Button Content="Coth&#x207B;&#x00B9;" Grid.Column="3" Grid.Row="5" Style="{StaticResource Trigostyle}" Command="{Binding CothInverseCommand}"/>
+
+                <Button Content="log&#x2091;" Grid.Column="0" Grid.Row="6" Style="{StaticResource Trigostyle}" Command="{Binding LogBaseECommand}"/>
+                <Button Content="log&#x2081;&#x2080;" Grid.Column="1" Grid.Row="6" Style="{StaticResource Trigostyle}" Command="{Binding LogBase10Command}"/>
+                <Button Content="log&#x2099;" Grid.Column="2" Grid.Row="6" Style="{StaticResource Trigostyle}"  Command="{Binding LogBaseNCommand}"/>
+                <Button Content="Remainder" Grid.Column="3" Grid.Row="6" Style="{StaticResource Trigostyle}" Command="{Binding RemainderCommand}"/>
             </Grid>
         </Grid>
     </Grid>

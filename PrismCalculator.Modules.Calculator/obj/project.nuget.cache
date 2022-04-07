@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+f7SQKFU3zuSHTl1Y0U8lUM8KpLmBL83Fst+aPVPALainG6RMTRMEqNGQyxItYzruOOPFuYWaAx4wk6ALddMdw==",
+  "dgSpecHash": "mjfYvFoaMwIU3bzdMIvD8gTQ9E7apOBEZGKCR6YMdWCwaStms6GcbqyEWm29ACbepY9C8x0IO8shrRt0RqLfBQ==",
   "success": true,
-  "projectFilePath": "E:\\Git\\PrismCalculator\\PrismCalculator.Modules.Calculator\\PrismCalculator.Modules.Calculator.csproj",
+  "projectFilePath": "E:\\Git\\PrismWPFCalculator\\PrismCalculator.Modules.Calculator\\PrismCalculator.Modules.Calculator.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\thien\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.31\\microsoft.xaml.behaviors.wpf.1.1.31.nupkg.sha512",
     "C:\\Users\\thien\\.nuget\\packages\\prism.core\\8.1.97\\prism.core.8.1.97.nupkg.sha512",

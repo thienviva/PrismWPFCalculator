@@ -29,17 +29,17 @@
           "lib/net47/Prism.dll": {}
         }
       },
-      "Prism.Unity/8.1.97": {
+      "Prism.Unity/8.0.0.1909": {
         "type": "package",
         "dependencies": {
-          "Prism.Wpf": "8.1.97",
-          "Unity.Container": "5.11.11"
+          "Prism.Wpf": "8.0.0.1909",
+          "Unity.Container": "5.11.8"
         },
         "compile": {
-          "lib/net47/Prism.Unity.Wpf.dll": {}
+          "lib/net48/Prism.Unity.Wpf.dll": {}
         },
         "runtime": {
-          "lib/net47/Prism.Unity.Wpf.dll": {}
+          "lib/net48/Prism.Unity.Wpf.dll": {}
         }
       },
       "Prism.Wpf/8.1.97": {
@@ -79,7 +79,7 @@
           "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll": {}
         }
       },
-      "Unity.Abstractions/5.11.7": {
+      "Unity.Abstractions/5.11.6": {
         "type": "package",
         "dependencies": {
           "System.Threading.Tasks.Extensions": "4.5.2"
@@ -91,11 +91,11 @@
           "lib/net48/Unity.Abstractions.dll": {}
         }
       },
-      "Unity.Container/5.11.11": {
+      "Unity.Container/5.11.8": {
         "type": "package",
         "dependencies": {
           "System.Runtime.CompilerServices.Unsafe": "4.5.2",
-          "Unity.Abstractions": "5.11.7"
+          "Unity.Abstractions": "5.11.6"
         },
         "compile": {
           "lib/net48/Unity.Container.dll": {}
@@ -108,14 +108,27 @@
         "type": "project",
         "framework": ".NETFramework,Version=v4.8",
         "dependencies": {
-          "Prism.Core": "8.1.97",
-          "Prism.Wpf": "8.1.97"
+          "Prism.Wpf": "8.1.97",
+          "PrismCalculator.Modules.Login": "1.0.0"
         },
         "compile": {
           "bin/placeholder/PrismCalculator.Modules.Calculator.dll": {}
         },
         "runtime": {
           "bin/placeholder/PrismCalculator.Modules.Calculator.dll": {}
+        }
+      },
+      "PrismCalculator.Modules.Login/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.8",
+        "dependencies": {
+          "Prism.Wpf": "8.0.0.1909"
+        },
+        "compile": {
+          "bin/placeholder/PrismCalculator.Modules.Login.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PrismCalculator.Modules.Login.dll": {}
         }
       }
     },
@@ -147,17 +160,17 @@
           "lib/net47/Prism.dll": {}
         }
       },
-      "Prism.Unity/8.1.97": {
+      "Prism.Unity/8.0.0.1909": {
         "type": "package",
         "dependencies": {
-          "Prism.Wpf": "8.1.97",
-          "Unity.Container": "5.11.11"
+          "Prism.Wpf": "8.0.0.1909",
+          "Unity.Container": "5.11.8"
         },
         "compile": {
-          "lib/net47/Prism.Unity.Wpf.dll": {}
+          "lib/net48/Prism.Unity.Wpf.dll": {}
         },
         "runtime": {
-          "lib/net47/Prism.Unity.Wpf.dll": {}
+          "lib/net48/Prism.Unity.Wpf.dll": {}
         }
       },
       "Prism.Wpf/8.1.97": {
@@ -197,7 +210,7 @@
           "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll": {}
         }
       },
-      "Unity.Abstractions/5.11.7": {
+      "Unity.Abstractions/5.11.6": {
         "type": "package",
         "dependencies": {
           "System.Threading.Tasks.Extensions": "4.5.2"
@@ -209,11 +222,11 @@
           "lib/net48/Unity.Abstractions.dll": {}
         }
       },
-      "Unity.Container/5.11.11": {
+      "Unity.Container/5.11.8": {
         "type": "package",
         "dependencies": {
           "System.Runtime.CompilerServices.Unsafe": "4.5.2",
-          "Unity.Abstractions": "5.11.7"
+          "Unity.Abstractions": "5.11.6"
         },
         "compile": {
           "lib/net48/Unity.Container.dll": {}
@@ -226,14 +239,27 @@
         "type": "project",
         "framework": ".NETFramework,Version=v4.8",
         "dependencies": {
-          "Prism.Core": "8.1.97",
-          "Prism.Wpf": "8.1.97"
+          "Prism.Wpf": "8.1.97",
+          "PrismCalculator.Modules.Login": "1.0.0"
         },
         "compile": {
           "bin/placeholder/PrismCalculator.Modules.Calculator.dll": {}
         },
         "runtime": {
           "bin/placeholder/PrismCalculator.Modules.Calculator.dll": {}
+        }
+      },
+      "PrismCalculator.Modules.Login/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.8",
+        "dependencies": {
+          "Prism.Wpf": "8.0.0.1909"
+        },
+        "compile": {
+          "bin/placeholder/PrismCalculator.Modules.Login.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PrismCalculator.Modules.Login.dll": {}
         }
       }
     },
@@ -265,17 +291,17 @@
           "lib/net47/Prism.dll": {}
         }
       },
-      "Prism.Unity/8.1.97": {
+      "Prism.Unity/8.0.0.1909": {
         "type": "package",
         "dependencies": {
-          "Prism.Wpf": "8.1.97",
-          "Unity.Container": "5.11.11"
+          "Prism.Wpf": "8.0.0.1909",
+          "Unity.Container": "5.11.8"
         },
         "compile": {
-          "lib/net47/Prism.Unity.Wpf.dll": {}
+          "lib/net48/Prism.Unity.Wpf.dll": {}
         },
         "runtime": {
-          "lib/net47/Prism.Unity.Wpf.dll": {}
+          "lib/net48/Prism.Unity.Wpf.dll": {}
         }
       },
       "Prism.Wpf/8.1.97": {
@@ -315,7 +341,7 @@
           "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll": {}
         }
       },
-      "Unity.Abstractions/5.11.7": {
+      "Unity.Abstractions/5.11.6": {
         "type": "package",
         "dependencies": {
           "System.Threading.Tasks.Extensions": "4.5.2"
@@ -327,11 +353,11 @@
           "lib/net48/Unity.Abstractions.dll": {}
         }
       },
-      "Unity.Container/5.11.11": {
+      "Unity.Container/5.11.8": {
         "type": "package",
         "dependencies": {
           "System.Runtime.CompilerServices.Unsafe": "4.5.2",
-          "Unity.Abstractions": "5.11.7"
+          "Unity.Abstractions": "5.11.6"
         },
         "compile": {
           "lib/net48/Unity.Container.dll": {}
@@ -344,14 +370,27 @@
         "type": "project",
         "framework": ".NETFramework,Version=v4.8",
         "dependencies": {
-          "Prism.Core": "8.1.97",
-          "Prism.Wpf": "8.1.97"
+          "Prism.Wpf": "8.1.97",
+          "PrismCalculator.Modules.Login": "1.0.0"
         },
         "compile": {
           "bin/placeholder/PrismCalculator.Modules.Calculator.dll": {}
         },
         "runtime": {
           "bin/placeholder/PrismCalculator.Modules.Calculator.dll": {}
+        }
+      },
+      "PrismCalculator.Modules.Login/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.8",
+        "dependencies": {
+          "Prism.Wpf": "8.0.0.1909"
+        },
+        "compile": {
+          "bin/placeholder/PrismCalculator.Modules.Login.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PrismCalculator.Modules.Login.dll": {}
         }
       }
     },
@@ -383,17 +422,17 @@
           "lib/net47/Prism.dll": {}
         }
       },
-      "Prism.Unity/8.1.97": {
+      "Prism.Unity/8.0.0.1909": {
         "type": "package",
         "dependencies": {
-          "Prism.Wpf": "8.1.97",
-          "Unity.Container": "5.11.11"
+          "Prism.Wpf": "8.0.0.1909",
+          "Unity.Container": "5.11.8"
         },
         "compile": {
-          "lib/net47/Prism.Unity.Wpf.dll": {}
+          "lib/net48/Prism.Unity.Wpf.dll": {}
         },
         "runtime": {
-          "lib/net47/Prism.Unity.Wpf.dll": {}
+          "lib/net48/Prism.Unity.Wpf.dll": {}
         }
       },
       "Prism.Wpf/8.1.97": {
@@ -433,7 +472,7 @@
           "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll": {}
         }
       },
-      "Unity.Abstractions/5.11.7": {
+      "Unity.Abstractions/5.11.6": {
         "type": "package",
         "dependencies": {
           "System.Threading.Tasks.Extensions": "4.5.2"
@@ -445,11 +484,11 @@
           "lib/net48/Unity.Abstractions.dll": {}
         }
       },
-      "Unity.Container/5.11.11": {
+      "Unity.Container/5.11.8": {
         "type": "package",
         "dependencies": {
           "System.Runtime.CompilerServices.Unsafe": "4.5.2",
-          "Unity.Abstractions": "5.11.7"
+          "Unity.Abstractions": "5.11.6"
         },
         "compile": {
           "lib/net48/Unity.Container.dll": {}
@@ -462,14 +501,27 @@
         "type": "project",
         "framework": ".NETFramework,Version=v4.8",
         "dependencies": {
-          "Prism.Core": "8.1.97",
-          "Prism.Wpf": "8.1.97"
+          "Prism.Wpf": "8.1.97",
+          "PrismCalculator.Modules.Login": "1.0.0"
         },
         "compile": {
           "bin/placeholder/PrismCalculator.Modules.Calculator.dll": {}
         },
         "runtime": {
           "bin/placeholder/PrismCalculator.Modules.Calculator.dll": {}
+        }
+      },
+      "PrismCalculator.Modules.Login/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.8",
+        "dependencies": {
+          "Prism.Wpf": "8.0.0.1909"
+        },
+        "compile": {
+          "bin/placeholder/PrismCalculator.Modules.Login.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PrismCalculator.Modules.Login.dll": {}
         }
       }
     }
@@ -526,10 +578,10 @@
         "readme.txt"
       ]
     },
-    "Prism.Unity/8.1.97": {
-      "sha512": "PDKDjC9HAFmCEoP8bgCwoGup0Lm0NyvYmN/kLbfO0Q4zmL/sZBDbP2KNC/UguXWOy0iH6fWiH9JYQYCGFZ4oBw==",
+    "Prism.Unity/8.0.0.1909": {
+      "sha512": "5WO7gvzQUkqxhJi0Ff+aCv3SSn0H4Eigk/yn4HPnNrQFoHzQJ5L1dtvyBcBP3zxrH/C3XXCfbl/4gikMVd/0MA==",
       "type": "package",
-      "path": "prism.unity/8.1.97",
+      "path": "prism.unity/8.0.0.1909",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -540,16 +592,15 @@
         "lib/net47/Prism.Unity.Wpf.dll",
         "lib/net47/Prism.Unity.Wpf.pdb",
         "lib/net47/Prism.Unity.Wpf.xml",
-        "lib/net5.0-windows7.0/Prism.Unity.Wpf.dll",
-        "lib/net5.0-windows7.0/Prism.Unity.Wpf.pdb",
-        "lib/net5.0-windows7.0/Prism.Unity.Wpf.xml",
+        "lib/net48/Prism.Unity.Wpf.dll",
+        "lib/net48/Prism.Unity.Wpf.pdb",
+        "lib/net48/Prism.Unity.Wpf.xml",
         "lib/netcoreapp3.1/Prism.Unity.Wpf.dll",
         "lib/netcoreapp3.1/Prism.Unity.Wpf.pdb",
         "lib/netcoreapp3.1/Prism.Unity.Wpf.xml",
         "prism-logo.png",
-        "prism.unity.8.1.97.nupkg.sha512",
-        "prism.unity.nuspec",
-        "readme.txt"
+        "prism.unity.8.0.0.1909.nupkg.sha512",
+        "prism.unity.nuspec"
       ]
     },
     "Prism.Wpf/8.1.97": {
@@ -638,10 +689,10 @@
         "version.txt"
       ]
     },
-    "Unity.Abstractions/5.11.7": {
-      "sha512": "3ztwGEpe35UJlCUswXoi4uVDp8bJsgPsOmO71nZnNXh51II7t54AbezDbS6sR2z4QnMOpNGDaXbsEkyg6dIfOQ==",
+    "Unity.Abstractions/5.11.6": {
+      "sha512": "G2nhnzlvizcNYrEDnGsC6aCTT+8FmVbd0PLoItJlJBHHqeX5cYi9neIE2odbkVWGFXZJwbNfwkVHPqHVEIULIg==",
       "type": "package",
-      "path": "unity.abstractions/5.11.7",
+      "path": "unity.abstractions/5.11.6",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -665,14 +716,14 @@
         "lib/netstandard1.0/Unity.Abstractions.pdb",
         "lib/netstandard2.0/Unity.Abstractions.dll",
         "lib/netstandard2.0/Unity.Abstractions.pdb",
-        "unity.abstractions.5.11.7.nupkg.sha512",
+        "unity.abstractions.5.11.6.nupkg.sha512",
         "unity.abstractions.nuspec"
       ]
     },
-    "Unity.Container/5.11.11": {
-      "sha512": "47u4MBG8hxV2ZBUK7LlXcZQW8yWSqUSCRG+2/TBA2CSkxkQlMfVUJ0RJODJsZgsiSgy4N0M8HIr7J88drYR/OQ==",
+    "Unity.Container/5.11.8": {
+      "sha512": "iZeix/165OP+EN7oN5UaVHIEi4Aya3jhBUo3TVReWDcyp8iYBExT19Drp5Q5rf56Hpcf+tN86tZW0B378NhwZQ==",
       "type": "package",
-      "path": "unity.container/5.11.11",
+      "path": "unity.container/5.11.8",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -696,7 +747,7 @@
         "lib/netstandard1.0/Unity.Container.pdb",
         "lib/netstandard2.0/Unity.Container.dll",
         "lib/netstandard2.0/Unity.Container.pdb",
-        "unity.container.5.11.11.nupkg.sha512",
+        "unity.container.5.11.8.nupkg.sha512",
         "unity.container.nuspec"
       ]
     },
@@ -704,13 +755,18 @@
       "type": "project",
       "path": "../PrismCalculator.Modules.Calculator/PrismCalculator.Modules.Calculator.csproj",
       "msbuildProject": "../PrismCalculator.Modules.Calculator/PrismCalculator.Modules.Calculator.csproj"
+    },
+    "PrismCalculator.Modules.Login/1.0.0": {
+      "type": "project",
+      "path": "../PrismCalculator.Modules.Login/PrismCalculator.Modules.Login.csproj",
+      "msbuildProject": "../PrismCalculator.Modules.Login/PrismCalculator.Modules.Login.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETFramework,Version=v4.8": [
-      "Prism.Core >= 8.1.97",
-      "Prism.Unity >= 8.1.97",
-      "PrismCalculator.Modules.Calculator >= 1.0.0"
+      "Prism.Unity >= 8.0.0.1909",
+      "PrismCalculator.Modules.Calculator >= 1.0.0",
+      "PrismCalculator.Modules.Login >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -719,11 +775,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Git\\PrismCalculator\\PrismCalculator\\PrismCalculator.csproj",
+      "projectUniqueName": "E:\\Git\\PrismWPFCalculator\\PrismCalculator\\PrismCalculator.csproj",
       "projectName": "PrismCalculator",
-      "projectPath": "E:\\Git\\PrismCalculator\\PrismCalculator\\PrismCalculator.csproj",
+      "projectPath": "E:\\Git\\PrismWPFCalculator\\PrismCalculator\\PrismCalculator.csproj",
       "packagesPath": "C:\\Users\\thien\\.nuget\\packages\\",
-      "outputPath": "E:\\Git\\PrismCalculator\\PrismCalculator\\obj\\",
+      "outputPath": "E:\\Git\\PrismWPFCalculator\\PrismCalculator\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -740,8 +796,11 @@
       "frameworks": {
         "net48": {
           "projectReferences": {
-            "E:\\Git\\PrismCalculator\\PrismCalculator.Modules.Calculator\\PrismCalculator.Modules.Calculator.csproj": {
-              "projectPath": "E:\\Git\\PrismCalculator\\PrismCalculator.Modules.Calculator\\PrismCalculator.Modules.Calculator.csproj"
+            "E:\\Git\\PrismWPFCalculator\\PrismCalculator.Modules.Calculator\\PrismCalculator.Modules.Calculator.csproj": {
+              "projectPath": "E:\\Git\\PrismWPFCalculator\\PrismCalculator.Modules.Calculator\\PrismCalculator.Modules.Calculator.csproj"
+            },
+            "E:\\Git\\PrismWPFCalculator\\PrismCalculator.Modules.Login\\PrismCalculator.Modules.Login.csproj": {
+              "projectPath": "E:\\Git\\PrismWPFCalculator\\PrismCalculator.Modules.Login\\PrismCalculator.Modules.Login.csproj"
             }
           }
         }
@@ -750,13 +809,9 @@
     "frameworks": {
       "net48": {
         "dependencies": {
-          "Prism.Core": {
-            "target": "Package",
-            "version": "[8.1.97, )"
-          },
           "Prism.Unity": {
             "target": "Package",
-            "version": "[8.1.97, )"
+            "version": "[8.0.0.1909, )"
           }
         }
       }

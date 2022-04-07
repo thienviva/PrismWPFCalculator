@@ -81,7 +81,12 @@
     </None>
     <AppDesigner Include="Properties\" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\PrismCalculator.Modules.Login\PrismCalculator.Modules.Login.csproj">
+      <Project>{E0BAFABD-81CC-49AF-B2B5-1A04569B0131}</Project>
+      <Name>PrismCalculator.Modules.Login</Name>
+    </ProjectReference>
+  </ItemGroup>
   <ItemGroup>
     <Page Include="Views\PrismCalculatorControl.xaml">
       <SubType>Designer</SubType>
@@ -93,10 +98,8 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Prism.Core">
-      <Version>8.1.97</Version>
-    </PackageReference>
     <PackageReference Include="Prism.Wpf" Version="8.1.97" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

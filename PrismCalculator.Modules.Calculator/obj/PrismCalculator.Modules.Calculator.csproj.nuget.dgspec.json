@@ -1,17 +1,70 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Git\\PrismCalculator\\PrismCalculator.Modules.Calculator\\PrismCalculator.Modules.Calculator.csproj": {}
+    "E:\\Git\\PrismWPFCalculator\\PrismCalculator.Modules.Calculator\\PrismCalculator.Modules.Calculator.csproj": {}
   },
   "projects": {
-    "E:\\Git\\PrismCalculator\\PrismCalculator.Modules.Calculator\\PrismCalculator.Modules.Calculator.csproj": {
+    "E:\\Git\\PrismWPFCalculator\\PrismCalculator.Modules.Calculator\\PrismCalculator.Modules.Calculator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Git\\PrismCalculator\\PrismCalculator.Modules.Calculator\\PrismCalculator.Modules.Calculator.csproj",
+        "projectUniqueName": "E:\\Git\\PrismWPFCalculator\\PrismCalculator.Modules.Calculator\\PrismCalculator.Modules.Calculator.csproj",
         "projectName": "PrismCalculator.Modules.Calculator",
-        "projectPath": "E:\\Git\\PrismCalculator\\PrismCalculator.Modules.Calculator\\PrismCalculator.Modules.Calculator.csproj",
+        "projectPath": "E:\\Git\\PrismWPFCalculator\\PrismCalculator.Modules.Calculator\\PrismCalculator.Modules.Calculator.csproj",
         "packagesPath": "C:\\Users\\thien\\.nuget\\packages\\",
-        "outputPath": "E:\\Git\\PrismCalculator\\PrismCalculator.Modules.Calculator\\obj\\",
+        "outputPath": "E:\\Git\\PrismWPFCalculator\\PrismCalculator.Modules.Calculator\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "C:\\Users\\thien\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net48"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net48": {
+            "projectReferences": {
+              "E:\\Git\\PrismWPFCalculator\\PrismCalculator.Modules.Login\\PrismCalculator.Modules.Login.csproj": {
+                "projectPath": "E:\\Git\\PrismWPFCalculator\\PrismCalculator.Modules.Login\\PrismCalculator.Modules.Login.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {
+          "dependencies": {
+            "Prism.Wpf": {
+              "target": "Package",
+              "version": "[8.1.97, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    },
+    "E:\\Git\\PrismWPFCalculator\\PrismCalculator.Modules.Login\\PrismCalculator.Modules.Login.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Git\\PrismWPFCalculator\\PrismCalculator.Modules.Login\\PrismCalculator.Modules.Login.csproj",
+        "projectName": "PrismCalculator.Modules.Login",
+        "projectPath": "E:\\Git\\PrismWPFCalculator\\PrismCalculator.Modules.Login\\PrismCalculator.Modules.Login.csproj",
+        "packagesPath": "C:\\Users\\thien\\.nuget\\packages\\",
+        "outputPath": "E:\\Git\\PrismWPFCalculator\\PrismCalculator.Modules.Login\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "configFilePaths": [
@@ -34,13 +87,9 @@
       "frameworks": {
         "net48": {
           "dependencies": {
-            "Prism.Core": {
-              "target": "Package",
-              "version": "[8.1.97, )"
-            },
             "Prism.Wpf": {
               "target": "Package",
-              "version": "[8.1.97, )"
+              "version": "[8.0.0.1909, )"
             }
           }
         }

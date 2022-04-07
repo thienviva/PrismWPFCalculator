@@ -136,7 +136,7 @@
                 </Grid.ColumnDefinitions>
                 <Button Content="Sin" Grid.Column="0" Grid.Row="0" Style="{StaticResource Trigostyle}"/>
                 <Button Content="Sinh" Grid.Column="1" Grid.Row="0" Style="{StaticResource Trigostyle}" />
-                <Button Content="Sin" Grid.Column="2" Grid.Row="0" Style="{StaticResource Trigostyle}"/> I
+                <Button Content="Sin" Grid.Column="2" Grid.Row="0" Style="{StaticResource Trigostyle}"/>
                 <Button Content="Sinh" Grid.Column="3" Grid.Row="0" Style="{StaticResource Trigostyle}"/>
 
                 <Button Content="Cos" Grid.Column="0" Grid.Row="1" Style="{StaticResource Trigostyle}"/>

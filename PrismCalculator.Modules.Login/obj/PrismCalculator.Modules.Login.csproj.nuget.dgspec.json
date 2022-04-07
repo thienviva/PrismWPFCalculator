@@ -1,0 +1,65 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Test\\PrismCalculator\\PrismCalculator.Modules.Login\\PrismCalculator.Modules.Login.csproj": {}
+  },
+  "projects": {
+    "D:\\Test\\PrismCalculator\\PrismCalculator.Modules.Login\\PrismCalculator.Modules.Login.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Test\\PrismCalculator\\PrismCalculator.Modules.Login\\PrismCalculator.Modules.Login.csproj",
+        "projectName": "PrismCalculator.Modules.Login",
+        "projectPath": "D:\\Test\\PrismCalculator\\PrismCalculator.Modules.Login\\PrismCalculator.Modules.Login.csproj",
+        "packagesPath": "C:\\Users\\hnthien\\.nuget\\packages\\",
+        "outputPath": "D:\\Test\\PrismCalculator\\PrismCalculator.Modules.Login\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\hnthien\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net48"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "D:\\code\\OTBeat-Live\\NutGetPackages": {},
+          "D:\\code\\OTBeat-Live\\packages": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net48": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {
+          "dependencies": {
+            "Prism.Wpf": {
+              "target": "Package",
+              "version": "[8.0.0.1909, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}
